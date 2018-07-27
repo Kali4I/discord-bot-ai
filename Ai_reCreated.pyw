@@ -18,9 +18,6 @@ await client.change_presence(game=discord.Game(name='игру', type=1))
 2 - слушает
 3 - смотрит
 
-https://discord.gg/nU6xjHB
-Мафия Разрабов
-
 https://discord.gg/ZQfNQ43
 Ai Development
 
@@ -608,7 +605,7 @@ https://anilist.co/character/{0}
 
     if msg == p+'help':
         help = await setEmbed(c=clr_snow, t='Справочник по командам:', d='''Разработчик: [%s](http://akirasumato.ml/).
-[[Наш Discord-сервер]](https://discord.gg/ZQfNQ43) [[Наш сайт]](https://discord-ai.tk/) [[Пригласить меня]](%s)
+[[Наш Discord-сервер]](https://discord.gg/ZQfNQ43) [[Пригласить меня]](%s)
 ~~                                                                                                            ~~''' % (developer, auth), f_icon=client.user.avatar_url)
         help.add_field(name="Стандартные команды:", value='''
 `{0}help            |` Справочник по командам.
