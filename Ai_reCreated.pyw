@@ -1812,14 +1812,6 @@ async def on_member_join(member):
     mute_role = getRole(names=role_for_mute, server=member.server)
     userCfg = loadUser(member.server, member)
 
-    if userCfg['mute'] == True:
-        print('### Пользователь {0} получил мут на сервере {1} после перезахода.'.format(member, member.server))
-        return await client.add_roles(member, mute_role)
-
-
-@client.event
-async def on_ready():
-
     print('Discord-Бот Ай [Re-Created]\nРазработчик AkiraSumato_01 (aka Ram).')
     print('Я - {0} | {1}'.format(client.user, client.user.id))
     print('------------------------------------')
@@ -1829,6 +1821,14 @@ async def on_ready():
     await client.change_presence(game=discord.Game(name='ничто!', type=1), status='dnd')
 
 try:
-    client.run('NDUyNTM0NjE4NTIwOTQ0NjQ5.DhQOCw.wm4KRIqHXYBeZxR1nwgmvaqqRK0')
+    client.run('helloworld c:')
+
+    if userCfg['mute'] == True:
+        print('### Пользователь {0} получил мут на сервере {1} после перезахода.'.format(member, member.server))
+        return await client.add_roles(member, mute_role)
+
+
+@client.event
+async def on_ready():')
 except:
     print('Подключение к Discord не удалось.')
