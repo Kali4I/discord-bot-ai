@@ -1,3 +1,3 @@
 @echo off
 title Discord bot Ai
-python.exe -i Ai_reCreated.pyw
+python -i Ai_reCreated.pyw
