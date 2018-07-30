@@ -26,7 +26,7 @@ Ai Development
 
 Да здравствует "человекочитаемый" код, еее!
 """
-import discord
+import discord 
 import asyncio
 from resources.modules.functions import *
 from resources.modules.func import *
